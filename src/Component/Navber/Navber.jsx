@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GiShoppingCart } from "react-icons/gi";
 import { MdMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Navber = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +10,9 @@ const Navber = () => {
     return (
         <nav className="flex justify-between items-center px-6 md:px-16 py-6 fixed w-full md:bg-[#121212]  bg-[#121212]">
             <h1 className="text-white text-xl md:text-3xl font-bold">
-                ACPFBA
+                <Link to='/'>
+                    ACPFBA
+                </Link>
             </h1>
 
             <div className="flex justify-between items-center gap-4 md:gap-10">
